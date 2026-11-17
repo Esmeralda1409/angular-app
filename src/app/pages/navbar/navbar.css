@@ -1,0 +1,56 @@
+.header {
+  background-color: #1a1b1e; /* Fondo negro / gris oscuro */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.links a {
+  color: #a1a1aa; /* Color del texto secundario para enlaces inactivos */
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.links a:hover,
+.links a.active {
+  color: #ffffff; /* Blanco cuando el enlace está activo o se pasa el mouse */
+}
+
+.user-name {
+  color: #e4e4e7;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.btn-logout {
+  background: transparent;
+  border: 1px solid #4b5563;
+  color: #ffffff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-logout:hover {
+  background-color: #374151;
+}

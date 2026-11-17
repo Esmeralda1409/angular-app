@@ -1,0 +1,17 @@
+<header class="header">
+  <h1>Tienda</h1>
+
+  <nav class="links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+    <a routerLink="/panel" routerLinkActive="active">Panel</a>
+    <a routerLink="/admin" routerLinkActive="active">Admin</a>
+    <a routerLink="/usuario" routerLinkActive="active">Mi cuenta</a>
+
+    @if (auth.isAuthenticated()) {
+      <span class="user-name">{{ auth.username() }}</span>
+      <button class="btn-logout" (click)="salir()">Salir</button>
+    } @else {
+      <a routerLink="/login" routerLinkActive="active">Ingresar</a>
+    }
+  </nav>
+</header>
